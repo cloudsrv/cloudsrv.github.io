@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "关于“让我们基于Node.js创建一个Web应用"
+title:  "关于“让我们基于Node.js创建一个Web应用”"
 date:   2013-01-18 20:19 +0800
 categories: Node NodeJS
 ---
