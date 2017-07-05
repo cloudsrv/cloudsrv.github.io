@@ -2,7 +2,7 @@
 layout: post
 title:  "Oracle Compute云搭建Kubernetes集群"
 date:   2017-07-04 08:14:41 +0800
-categories: jekyll update
+categories: Oracle Cloud
 ---
 
 ## 架构简介
