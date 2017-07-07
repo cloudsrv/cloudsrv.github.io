@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Oracle RDS Testing Single AZ vs. Multi-AZ"
-date:   2016-12-12 08:14:41 +0800
+date:   2015-12-26 08:14:41 +0800
 categories: AWS Cloud
 ---
 These days have some testing on AWS Oracle RDS in Beijing region for understand the influence of the Multi-AZ feature. Following are the recording:
