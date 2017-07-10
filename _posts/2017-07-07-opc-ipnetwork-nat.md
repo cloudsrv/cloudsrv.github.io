@@ -2,7 +2,7 @@
 layout: post
 title:  "Oracle Compute云IP Network中NAT网络设置"
 date:   2017-07-07 20:25 +0800
-categories: Node NodeJS
+categories: Oracle Cloud
 ---
 
 ## NAT网络作用
