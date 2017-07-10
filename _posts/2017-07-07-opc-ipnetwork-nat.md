@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Oracle Compute云IP Network中NAT网络设置"
-date:   2013-02-23 20:25 +0800
+date:   2017-07-07 20:25 +0800
 categories: Node NodeJS
 ---
 
@@ -15,7 +15,7 @@ categories: Node NodeJS
 
 我们看一个典型的按照最佳实践部署网络拓扑图
 
-![](../assets/img/opc-ipnetwork/nat-arch.png)
+![](/assets/img/opc-ipnetwork/nat-arch.png)
 
 其中为了简化我们只使用了一个有公网IP的实例充当了NAT实例和堡垒机（跳板机）双重作用，通过Oracle Compute的Shared Network申请的公网IP连接互联网。而在IPNetwork\_1和IPNetwork\_2两个网络中app\_01和app\_02两个虚拟机实例通过nat\_instance这个实例将访问互联网的流量转发出去，而自己没有公网IP且通过互联网也访问不到这两个实例。这样IPNetwork\_1和IPNetwork\_2就是我们在前面提到公有云网络安全最佳实践中提到的私有子网的作用，用户所有自己的应用及数据库都应该在这些子网中，而Shared IPNetwork的作用就是公有子网，如果需要设置负载均衡和单独的堡垒机也要放在这个子网中。
 
@@ -203,7 +203,7 @@ $ terraform apply
 
 这个命令会运行一段时间来在Compute云中部署所有的资源，如果一切正常，Terraform最后会将我们的NAT实例的公网IP打印出来。紧接着我们通过SSH客户端使用我们对应私钥登录NAT实例，并将NAT实例作为跳板机登录放在私网中的192.168.2.16或者192.168.3.11这两个实例，PING一个公网地址比如8.8.8.8来测试我们整个设置：
 
-![](../assets/img/opc-ipnetwork/testing.png)
+![](/assets/img/opc-ipnetwork/testing.png)
 
 ## 总结
 
