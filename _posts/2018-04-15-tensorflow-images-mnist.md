@@ -9,7 +9,7 @@ TensorFlow官方最新的教程[原文](https://www.tensorflow.org/tutorials/lay
 
 TensorFlow layer模块通过提供高层级的API来方便的构建一个神经网络，方便的创建密集（全关联）层和卷积层，添加激活函数和应用dropout正则化。在本教程中将学习如何使用layer来构建一个卷积神经网络模块识别MINIST数据集中手写的数字。
 
-![MNINST数据集](../assets/img/tensorflow-mninst/mnist_0-9.png)
+![MNINST数据集](/assets/img/tensorflow-mninst/mnist_0-9.png)
 
 **[MNINST数据集](http://yann.lecun.com/exdb/mnist/)有60,000个训练样本图片和10,000个测试样本图片，其中图片是由28x28像素的黑白手写的数字0到9组成。**
 
