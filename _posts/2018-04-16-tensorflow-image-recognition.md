@@ -15,7 +15,7 @@ TensorFlow官方最新的教程[原文](https://www.tensorflow.org/tutorials/ima
 
 Inception-v3使用2012年的数据对[ImageNet](http://image-net.org/)大型视觉识别挑战进行了训练。这是计算机视觉的一项标准任务，模型尝试将整个图像分为[1000个类别](http://image-net.org/challenges/LSVRC/2014/browse-synsets)，如“Zebra”、“Dalmatian”和“Dishwasher”。 例如，以下是[AlexNet](https://www.cs.toronto.edu/~fritz/absps/imagenet.pdf)对一些图像进行分类的结果：
 
-![图像分类](../assets/img/tensorflow-image/AlexClassification.png)
+![图像分类](/assets/img/tensorflow-image/AlexClassification.png)
 
 为了比较模型，我们检查了模型未能预测正确答案的频率，排名前5的猜测作为他们标准——被称为“前5错误率”。[AlexNet](https://www.cs.toronto.edu/~fritz/absps/imagenet.pdf)通过在2012年验证数据集上达到了15.3％的前5错误率；[Inception（GoogLeNet）](https://arxiv.org/abs/1409.4842)达到6.67％；[BN-Inception-v2](https://arxiv.org/abs/1502.03167)实现4.9％；[Inception-v3](https://arxiv.org/abs/1512.00567)达到3.46％。
 
@@ -38,7 +38,7 @@ python classify_image.py
 
 以上命令将会对提供的熊猫图片进行分类。
 
-![熊猫图片](../assets/img/tensorflow-image/cropped_panda.jpg)
+![熊猫图片](/assets/img/tensorflow-image/cropped_panda.jpg)
 
 如果模型运行正确，脚本会产生如下输出：
 
@@ -87,7 +87,7 @@ I tensorflow/examples/label_image/main.cc:206] bulletproof vest (466): 0.0053508
 
 在这个例子里我们使用默认的图片[Admiral Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)，你可以看到模型正确的识别出来了她穿着了军装，给出了0.8的高分。
 
-![Admiral Grace Hopper](../assets/img/tensorflow-image/grace_hopper.jpg)
+![Admiral Grace Hopper](/assets/img/tensorflow-image/grace_hopper.jpg)
 
 接着你可以通过指定参数``--image=my_image.png``使用自己的图片，比如：
 
