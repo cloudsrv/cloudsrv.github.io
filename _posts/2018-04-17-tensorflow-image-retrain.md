@@ -17,7 +17,7 @@ TensorFlow官方最新的教程[原文](https://www.tensorflow.org/tutorials/ima
 
 ## 训练花的分类
 
-![图像分类](../assets/img/tensorflow-retrain/daisies.jpg)
+![图像分类](/assets/img/tensorflow-retrain/daisies.jpg)
 Kelly Sikkema供图
 
 在进行训练之前你需要一组图片来教会神经网络识别新的类别。后面的内容有解释怎样准备你自己的图片，开始你可以使用一些有共享许可的花的图片。获得这组图片使用如下命令：
@@ -103,7 +103,7 @@ python label_image.py \
 
 下面就是花分类图片的目录结构，你可以按照这个例子来组织自己的分类图片：
 
-![目录结构](../assets/img/tensorflow-retrain/folder_structure.png)
+![目录结构](/assets/img/tensorflow-retrain/folder_structure.png)
 
 实践中要达到一定的准确率需要一些工作。下面就我们会遇到的问题进行一些讨论。
 
