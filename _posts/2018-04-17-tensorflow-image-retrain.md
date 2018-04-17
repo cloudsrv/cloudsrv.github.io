@@ -166,7 +166,7 @@ python retrain.py \
 
 如果你只是想让它运行的更快，可以减小输入图片的大小（URL中第二个数字），从“224”减小到“192”、“160”或者“128”像素正方形大小，甚至是“96”（仅适用于V2）。更为激进的节约资源的做法可以选择使用百分比（第一个数字）“100”、“075”、“050”或者“035”（“025”只是针对V1）来控制“特征深度”或者每个位置神经元的数量。权重的数量（以及文件大小和速度）随着该数值的平方收缩。可以分别参看[MobileNet V1的博客](https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html)和[Mobile V2的GitHub页面](https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet)的报告来衡量在ImageNet分类中的表现。
 
-MobileNet V2不会在瓶颈层来应用特征深度百分比。MobileNet V1会这样做，那就会😔很小的深度而让任务在分类层更难。使用原来的ImageNet的1001分类数值而不是用更为严格的瓶颈层的数值会更有帮助吗？可以简单地尝试在模型名称中将``mobilenet_v1.../feature_vector``替换为``mobilenet_v1.../classification``。
+MobileNet V2不会在瓶颈层来应用特征深度百分比。MobileNet V1会这样做，由于深度很小而让任务在分类层更难。使用原来的ImageNet的1001分类数值而不是用更为严格的瓶颈层的数值会更有帮助吗？可以简单地尝试在模型名称中将``mobilenet_v1.../feature_vector``替换为``mobilenet_v1.../classification``。
 
 像以前一样，可以将所有重新培训的模型与``label_image.py``一起使用。例如，需要指定您的模型所需的图像大小：
 
