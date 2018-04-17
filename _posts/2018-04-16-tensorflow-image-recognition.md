@@ -9,7 +9,7 @@ TensorFlow官方最新的教程[原文](https://www.tensorflow.org/tutorials/ima
 
 我们的大脑让视觉看起来很容易。 它不需要任何努力让人类分辨狮子和美洲虎，阅读标志或识别人类的脸部。 但实际上这些问题如果用计算机解决却非常困难，虽然它们看起来很容易，这都是因为我们的大脑非常善于理解图像。
 
-在过去的几年中，机器学习领域在解决这些难题方面取得了巨大的进步。 特别是我们发现一种称为深[卷积神经网络](https://colah.github.io/posts/2014-07-Conv-Nets-Modular/)的模型可以在合理的性能基础上实现艰难的视觉识别任务——在某些领域达到甚至超过人类的表现。
+在过去的几年中，机器学习领域在解决这些难题方面取得了巨大的进步。 特别是我们发现一种称为深度[卷积神经网络](https://colah.github.io/posts/2014-07-Conv-Nets-Modular/)的模型可以在合理的性能基础上实现艰难的视觉识别任务——在某些领域达到甚至超过人类的表现。
 
 研究人员的ImageNet工作验证了他们在计算机视觉领域方面的稳步进展——[ImageNet](http://www.image-net.org/)是计算机视觉的学术基准。持续的模型改进凸显出来，每次都能达到更高的发展水平：[QuocNet](https://static.googleusercontent.com/media/research.google.com/en//archive/unsupervised_icml2012.pdf)、[AlexNet](https://www.cs.toronto.edu/~fritz/absps/imagenet.pdf)、[Inception（GoogLeNet）](https://arxiv.org/abs/1409.4842)、[BN-Inception-v2](https://arxiv.org/abs/1502.03167)。 Google内部和外部的研究人员发表了大量描述这些模型的论文，但是结果仍然难以重现。我们现在正在更进一步，发布了最新模型[Inception-v3](https://arxiv.org/abs/1512.00567)代码来运行图像识别。
 
@@ -85,7 +85,7 @@ I tensorflow/examples/label_image/main.cc:206] pickelhaube (716): 0.00800814
 I tensorflow/examples/label_image/main.cc:206] bulletproof vest (466): 0.00535088
 ```
 
-在这个例子里我们使用默认的图片[Admiral Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)，你可以看到模型正确的识别出来了她穿着了军装，给出了0.8的高分。
+在这个例子里我们使用默认的图片[Admiral Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)，你可以看到模型正确的识别出她穿着了军装，给出了0.8的高分。
 
 ![Admiral Grace Hopper](/assets/img/tensorflow-image/grace_hopper.jpg)
 
@@ -326,7 +326,7 @@ int main(int argc, char* argv[]) {
 
 这里我们演示了对象识别，但是你可以在其他模型中使用类似的代码，用来在跨越各种领域中发现和识别。我们希望这个小例子给你在自己的产品中使用TensorFlow有一些启发。
 
-## 更多的一些学习资源
+## 更多的学习资源
 
 学习一般的神经网络知识，Michael Nielsen的[免费在线书](http://neuralnetworksanddeeplearning.com/chap1.html)是一个非常棒的资源。对于特定的卷积神经网络，Chris Olah有一些[非常好的博客](https://colah.github.io/posts/2014-07-Conv-Nets-Modular/)，以及Michael Nielsen的的书也有[很多章节](http://neuralnetworksanddeeplearning.com/chap6.html)也覆盖了很多内容。
 
