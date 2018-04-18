@@ -168,7 +168,7 @@ python retrain.py \
 
 MobileNet V2不会在瓶颈层来应用特征深度百分比。MobileNet V1会这样做，由于深度很小而让任务在分类层更难。使用原来的ImageNet的1001分类数值而不是用更为严格的瓶颈层的数值会更有帮助吗？可以简单地尝试在模型名称中将``mobilenet_v1.../feature_vector``替换为``mobilenet_v1.../classification``。
 
-像以前一样，可以将所有重新培训的模型与``label_image.py``一起使用。例如，需要指定您的模型所需的图像大小：
+像以前一样，可以将所有重新培训的模型与``label_image.py``一起使用。例如，需要指定模型所需的图像大小：
 
 ```bash
 python label_image.py \
