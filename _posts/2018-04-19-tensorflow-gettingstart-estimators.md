@@ -323,10 +323,18 @@ def train_input_fn(features, labels, batch_size):
 <table>
    <tbody>
    <tr>
-      <td colspan=“6”>测试集</td>
+      <td>测试集</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
    </tr>
    <tr>
-      <td colspan=“4”>特征</td>
+      <td>特征</td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>标签</td>
       <td>预测</td>
    </tr>
