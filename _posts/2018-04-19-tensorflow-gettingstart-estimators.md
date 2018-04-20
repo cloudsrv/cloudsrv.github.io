@@ -321,6 +321,7 @@ def train_input_fn(features, labels, batch_size):
 **评估**意思是查明模型作出预测的有效性。查明鸢尾分类模型的有效性，传递一些萼片和花瓣的度量值给模型，让模型作出预测鸢尾植物代表的种类。然后比较模型预测与实际标签。例如一个模型挑出了一半输入样本的正确种类，那么**[准确率](https://developers.google.com/machine-learning/glossary/#accuracy)**就是0.5。下面的模型就会更有效一些：
 
 <table>
+   <tbody>
    <tr>
       <td colspan=“6”>测试集</td>
    </tr>
@@ -369,6 +370,7 @@ def train_input_fn(features, labels, batch_size):
       <td>1</td>
       <td>1</td>
    </tr>
+   </tbody>
 </table>
 
 **一个模型预测的准确率为80%**
